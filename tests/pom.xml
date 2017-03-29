@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>multi-app</artifactId>
+        <groupId>com.gw.gosuqa</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <properties>
+        <argLine> -Xms256m -Xmx2048m</argLine>
+    </properties>
+
+
+    <artifactId>tests</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.gw.gosuqa</groupId>
+            <artifactId>util</artifactId>
+            <version>1.0-SNAPSHOT</version>
+           <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.gw.gosuqa</groupId>
+            <artifactId>app</artifactId>
+           <version>1.0-SNAPSHOT</version>
+           <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+<!--
+    <build>
+
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.19.1</version>
+                <configuration>
+                   <argLine>${argLine} -Xms256m -Xmx2048m</argLine>
+                    <forkCount>1</forkCount>
+                    <runOrder>random</runOrder>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>report-aggregate</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>report-aggregate</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+-->
+
+
+</project>

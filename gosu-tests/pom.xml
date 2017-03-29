@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>multi-app</artifactId>
+        <groupId>com.gw.gosuqa</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>gosu-tests</artifactId>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.11</version>
+            <scope>test</scope>
+
+        </dependency>
+        <dependency>
+            <groupId>com.gw.gosuqa</groupId>
+            <artifactId>gosu-utils</artifactId>
+            <version>1.0-SNAPSHOT</version>
+            <!--<scope>test</scope>-->
+        </dependency>
+    </dependencies>
+    <build>
+        <sourceDirectory>src/main/gosu</sourceDirectory>
+        <testSourceDirectory>src/test/gosu</testSourceDirectory>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.3</version>
+                <configuration>
+                    <compilerId>gosuc</compilerId>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>org.gosu-lang.gosu</groupId>
+                        <artifactId>gosu-maven-compiler</artifactId>
+                        <version>${gosu.version}</version>
+                    </dependency>
+                </dependencies>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>

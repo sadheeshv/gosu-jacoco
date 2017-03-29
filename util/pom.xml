@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>multi-app</artifactId>
+        <groupId>com.gw.gosuqa</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>util</artifactId>
+
+
+
+    <!--
+    <build>
+        <plugins>
+        <plugin>
+            <groupId>org.jacoco</groupId>
+            <artifactId>jacoco-maven-plugin</artifactId>
+            <version>0.7.9</version>
+            <executions>
+
+                <execution>
+                    <id>pre-unit-test</id>
+                    <goals>
+                        <goal>prepare-agent</goal>
+                    </goals>
+                    <configuration>
+
+                        <destFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</destFile>
+
+                        <propertyName>${argLine}</propertyName>
+                    </configuration>
+                </execution>
+
+                <execution>
+                    <id>post-unit-test</id>
+                    <phase>test</phase>
+                    <goals>
+                        <goal>report</goal>
+                    </goals>
+                    <configuration>
+
+                        <dataFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</dataFile>
+
+                        <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+        </plugins>
+
+
+    </build>
+    -->
+
+
+</project>
